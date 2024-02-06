@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação de textos</title>
+    <style>
+        body{
+            background-color: rgb(135, 135, 202);
+            }
+        mark{
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em destaque</b> usando a tag &lt;b&gt; (não semântica).</p>
+    <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica).</p>
+    
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica).</p>
+    <p>Nesta frase temos um <em>termo em itálico</em> usando a tag &lt;em&gt; ( semântica).</p>
+   
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;</p> 
+        <!--Caso queira usar apenas um MARK e colocar uma cor diferente é só adicionar um style dentro da tag MARK
+        ex: <mark style="background-color: lime;">
+        style não é coisa de HTML, mas sendo um caso específico, você pode adicionar dentro da tag no HTML sem problema-->
+    <p>E no outro parágrafo temos <mark>outro texto marcado</mark> no final.</p>
+    <!--Caso queira mudar a cor de vários marcadores, precisa adicionar a tag style no CSS e criar um seletor MARK com background da cor escolhida para os marcadores-->
+
+    <h2>Texto grande e texto pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo.</p>
+
+    <h2>Texto excluído</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não deve ser considerado.</p>
+
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins>  para dar ênfase e dizer que ele foi adicionado depois.</p>
+
+    <h1>Para usar em equações matemáticas</h1>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3=</p>
+
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+    
+</body>
+</html>

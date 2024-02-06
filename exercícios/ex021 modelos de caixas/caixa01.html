@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelos de Caixas</title>
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            /* SHORTHAND para bordas:
+            border: 10px solid darkslategray; */
+            
+           
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* SHORTHAND para PADDING:
+            padding: 10px 10px 10px 10px; OU APENAS
+            padding: 10px; JÁ QUE TODOS OS LADOS QUE O MESMO VALOR */
+          
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px; 
+
+           /*  margin:auto  PARA DEIXAR O ELEMENTO CENTRALIZADO NA TELA, MESMO QUE ELA MUDE DE TAMANHO 
+
+
+           - SHORTHAND para quando a margin tiver o mesmo valor em todos os lados:
+           margin: 10px 10px 10px 10px; 
+
+
+           - SHORTHAND para quando TOP e BOTTOM tiver o mesmo valor e RIGHT e LEFT também o mesmo valor:
+           margin: 10px 15px; 
+
+           SENDO ASSIM: 10px top, 15px right, 10px bottom e 15px left 
+
+           OBS: A ordem do SHORTHAND segue no sentido do relógio, começando ao meio dia. */
+
+           outline-width: 5px;
+           outline-style: dashed;
+           outline-color: salmon;
+
+          /*  SHORTHAND para OUTLINE: 
+           outline: 5px dashed salmon;
+           (espessura, estilo e cor) */
+        }
+
+        a{ /* link é inline level, para transformar em box-level é só acrescentar isso no display */
+
+            display: block;
+           /*  
+            VAMOS COLOCAR ESSA CONFIGURAÇÃO NO SHORTHAND:
+            border-width: 10px;
+            border-style: solid;
+            border-color: red; */
+
+            border: 10px solid red;
+            
+            
+            /* VAMOS COLOCAR ESSA CONFIGURAÇÃO NO SHORTHAND:
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p> <!-- O # SERVE PARA QUANDO VOCÊ NÃO INSERIR UM LINK VÁLIDO MAS QUEIRA QUE ELE APAREÇA COMO LINK NA PÁGINA -->
+   
+</body>
+</html>

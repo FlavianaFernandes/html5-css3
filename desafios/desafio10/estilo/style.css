@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{ /* VARIÁVEL EM CSS QUE FACILITA BASTANTE NA HORA DE MUDAR ALGO NO SITE */
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+
+*{ /* REGRA GERAL PARA TIRAR TODAS AS MARGENS E PADDINGS DO SITE E PODER CONFIGURAR CADA ELEMENTO COMO QUISER DEPOIS. SEMPRE USAR ESSA REGRA */
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after{
+    content: '\00a0\1F517'; /* TODOS OS LINKS QUE TEM PÁGINAS EXTERNAS, RECEBEM O EMOJI DE UM LINK NO FINAL DO CONTEÚDO */
+}
+
+header{
+   background-image: linear-gradient(to bottom, var(--cor3), var(--cor5)); /* O VAR FOI USADO POIS FORAM CRIADAS VARIÉVEIS NO COMEÇO DA CSS COM O ELEMENTO :ROOT */
+
+   min-height: 110px; /* A ALTURA MÍNIMA DO HEADER */
+   
+   text-align: center; /* TODOS OS TEXTOS QUE ESTÃO DENTRO DO HEADER FICARÃO CENTRALIZADOS */
+
+   padding-top: 40px; /* PARA DEIXAR O TÍTULO AFASTADO DO TOPO DA PÁGINA */
+}
+
+header > h1{ 
+   color: white;
+   font-family: var(--font-destaque);
+   font-weight: normal;
+   font-size: 3em; /* AUMENTAR O TAMANHO DA FONTE EM 3X MAIS QUE O TAMANHO NORMAL DELA */
+
+   margin-bottom: 10px; /* SEPARAR OS DOIS TEXTOS QUE TEM NO HEADER */
+
+   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.603);
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px; /* PARA ELE TER ESPAÇO NA LATERAL DIREITA E NÃO FICAR GRUDADO */
+
+    padding-left: 10px; /* PARA ELE TER ESPAÇO NA LATERAL ESQUERDA E NÃO FICAR GRUDADO */
+
+    padding-bottom: 30px;
+
+    margin: auto; /* PARA ELE CONTINUAR CENTRALIZADO MESMO QUANDO A TELA CRESCER OU DIMINUIR */
+
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.603);
+
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px; /* PARA DESGRUDAR DAS BORDAS E DÁ UMA ENGORDADA */
+
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.274); /* COLOCAR UMA SOMBRA LOGO ABAIXO DO NAV, MAS BEM DISCRETA */
+
+}
+
+nav > a{
+    color: var(--cor1);
+    padding: 10px; /* PARA SEPARAR UM LINK DO OUTRO */
+
+    border-radius: 3px; /* DEIXAR A BORDA DOS LINKS LEVEMENTE ARREDONDADA  */
+
+    text-decoration: none; /* TIRAR O SUBLINHADO DOS LINKS */
+
+    font-weight: bold;/*  DEIXAR AS LETRAS EM NEGRITO */
+
+    transition-duration: 0.5s; /* TEMPO QUE A TRANSIÇÃO LEVA PARA APARECER (NÃO É OBRIGATÓRIO E MUITA GENTE NÃO GOSTA DE COLOCAR. TANTO FAZ) */  
+}
+
+nav > a:hover{
+    background-color: var(--cor4); /* QUANDO O MOUSE PASSAR POR CIMA DO LINK DENTRO DO NAV, A COR DE FUNDO MUDA */
+    
+    color: var(--cor6); /* QUANDO O MOUSE PASSAR POR CIMA DO LINK DENTRO DO NAV, A COR DA LETRA MUDA */  
+    
+    padding: 11px; /* DAR A IMPRESSÃO QUE OS BOTÕES FICAM MAIORES QUANDO PASSAMOS O MOUSE POR CIMA */
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px; /*PARA NÃO DEIXAR O SITE TODO GRUDADO NOS CANTOS*/
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1{
+    color: var(--cor5); 
+    font-family: var(--fonte-android);
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-weight: normal;
+    
+    font-size: 1.3em; /* CRESCEU 1.2EM EM RELAÇÃO AO TAMANHO NORMAL DA LETRA */
+
+    background-image: linear-gradient(to right, var(--cor1), transparent); /* FEZ UM GRADIENTE DA DIREITA PARA A ESQUERDA. NA ESQUERDA ELE PERDE A COR POIS FICA TRANSPARENTE */
+
+    text-indent: 8px; /* ESPAÇAMENTO DO TIPO PARÁGRAFO. PODIA USAR UM PADDING TBM, DO TIPO
+    padding: 0px 0px 0px 8px; E ALTERAR SOMENTE O ESPAÇAMENTO DA ESQUERDA*/
+}
+
+main p{
+    margin: 15px 0px; /* CRIEI UMA MARGEM EM CIMA E EM BAIXO DE TODOS OS PARÁGRAFOS DO MAIN PARA QUE NÃO FIQUEM GRUDADOS NOS TÍTULOS */
+
+    text-align: justify;
+
+    text-indent: 30px; /* O RECUO DO INÍCIO DE TODOS OS PARÁGRAFOS */
+
+    font-size: 1.1em;
+    
+    line-height: 2em; /* ALTURA ENTRE AS LINHAS DO PARÁGRAFO, PARA QUE FACILITE A LEITURA E NÃO FIQUEM GRUDADAS */
+
+}
+
+main strong{
+     color: var(--cor5);
+     font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+ 
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 300px; /* COLOQUEI O TAMANHO MAX DA LARGURA DA IMAGEM, ASSIM QUANDO AUMENTAR OU DIMINUIR A TELA, ELA NÃO FICARÁ MUDANDO DE TAMANHO */
+
+    display: block;   /* A IMG POR PADRÃO NÃO É UM BLOCK, ENTÃO PRECISA TRANSFORMAR EM BLOCK PARA PODER CENTRALIZAR COM A MARGIN: AUTO */
+   
+    margin: auto;
+}
+
+div.video{
+    background-color: white;
+    
+    margin: 0px -20px 30px -20px; /* SERVE PARA CONFIGURAR O FUNDO VERDE, DEIXANDO AS MARGENS DIREITA E ESQUERDA ALINHADAS NA MARGEM DO MAIN (FIZ ISSO USANDO -20PX). O 30PX É PARA QUE O FUNDO DESGRUDE O ASIDE, DEIXANDO UM ESPAÇO ENTRE ELES */
+
+    padding: 20px;
+
+    padding-bottom: 56.5%; /* ESSA PROPRIEDADE VAI SERVIR PARA QUE O VÍDEO VOLTE NOVAMENTE PARA DENTRO DO FUNDO VERDE E TAMBÉM PARA DIMINUIR AS BORDAS PRETAS QUE APARECEM DENTRO DO VÍDEO. O VALOR VAI DEPENDER DO PRÓPRIO VÍDEO, TEM QUE FAZER OS TESTES PARA CHEGAR A UM RESULTADO LEGAL*/
+
+    position: relative; /* PRECISEI CRIAR ESSA PROPRIEDADE POSITION: RELATIVE, PARA ESTABELER UM ELEMENTO 'PAI' E PODER CONFIGURAR O IFRAME VINDO DO YOUTUBE. NESSE CASO, O ELEMENTO PAI SERÁ O FUNDO VERDE QUE FOI CRIADO. */
+}
+
+div.video > iframe{
+    position: absolute; /* COM O ELEMENTO 'PAI' ESTABELECIDO (O BACKGROUND VERDE QUE CRIANDO NA DIV VIDEO), AGORA PODEMOS MUDAR A POSIÇÃO DO IFRAME DO VÍDEO COMO QUISERMOS PARA DEIXÁ-LO RESPONSIVO JUNTAMENTE COM O SITE. TODAS AS MEDIDAS ESTABELECIDAS ABAIXO, TERÃO COMO BASE O POSICIONAMENTO DO ELEMENTO 'PAI'. */
+
+    top: 5%; /* VALOR DO DESLOCAMENTO DO VÍDEO EM RELAÇÃO AO FUNDO VERDE, PARA QUE NÃO FIQUE TÃO PRÓXIMO DAS BORDAS */
+
+
+    left: 5%; /* VALOR DO DESLOCAMENTO DO VÍDEO EM RELAÇÃO AO FUNDO VERDE, PARA QUE NÃO FIQUE TÃO PRÓXIMO DAS BORDAS */
+
+    width: 90%;
+    height: 90%;
+
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 11px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.322);
+
+}
+
+aside > h3{
+    background-color: var(--cor5);
+    color: white;
+    padding: 8px;
+
+    margin: -11px -11px 0px -11px; /* O VALOR NEGATIVO É PARA QUE O FUNDO DO TÍTULO SE IGUALE AO TOPO DO FUNDO DO ASIDE, POIS ASSIM A MARGEM VAZA PARA FORA */
+
+    border-top-right-radius: 10px; /*  PARA ARREDONDAR O TOPO DIREITO */
+
+    border-top-left-radius: 10px; /* PARA ARREDONDAR O TOPO ESQUERDO */
+}
+
+aside ul{
+    list-style-type: '\2714\00a0\00a0'; /* símbolo de check que peguei na emojipedia. O primeiro (\2714) é o código sem as letras, IMPORTANTE COMEÇAR COM BARRA INVERTIDA. O segundo (00a0) é o código usado para dar espaço entre textos e emojis. IMPORTANTE LEMBRAR QUE ISSO NÃO É COMPATÍVEL COM TODOS OS NAVEGADORES*/
+
+    list-style-position: inside; /* PARA COLOCAR AS BOLINHAS DA LISTA DENTRO DO ASIDE. GERALMENTE USA-SE O 'OUTSIDE' (PARA FORA), MAS NESSE CASO QUEREMOS DENTRO DO ASIDE, ENTÃO USA-SE 'INSIDE' */
+
+    columns: 2; /* DITAR O NÚMERO DE COLUNAS DA LISTA. NESSE CASO, COLOQUEI DUAS, MAS PODERIA SER QUANTAS EU QUISESSE */
+
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 9px;
+}
+
+footer a{
+    color: var(--cor3);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover{
+   text-decoration: underline;
+   color: var(--cor1);
+}

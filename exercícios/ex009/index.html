@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas ordenadas</h2> <!-- listas que seguem uma ordem e você pode adicionar ou excluir coisas que a ordem é ajeitada automaticamente-->
+   
+    <ol type="a" start="3"> <!-- parâmetros que podemos adicionar a lista, TYPE (tipo) e START (indica de onde começa a lista) -->
+    <li>Acordar</li>
+    <li>Tomar banho</li>
+    <li>Tomar café</li>
+    <li>Tomar remédio</li>
+    <li>Estudar</li>
+    <!-- atalho para criar várias listas de uma vez li*4 + ENTER (digita o li > * > a quantidade de listas que deseja criar)-->
+    </ol>
+
+    
+    <h2>Listas não ordenadas</h2> <!-- Também podemos definir o tipo (TYPE) como: "square", "circle" ou "disc". -->
+    
+    <ul type="square">
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Açúcar</li>
+        <li>Leite</li>
+        <li>Café</li>
+        <li>Pão de forma</li>
+        <li>Queijo mussarela</li>
+    </ul>
+    
+    <h2>Misturando as coisas (ordenadas + ordenadas)</h2>
+    <ol>
+        <li>Minhas bandas antigas favoritas</li>
+        <ol type="a"> <!-- aqui eu tenho uma lista ordenada dentro da outra e coloquei também um TIPO ALFABÉTICO, para não ficar toda numérica -->
+            <li>Charlie Brown Jr.</li>
+            <li>CPM 22</li>
+            <li>Linkin Park</li>
+            <li>Red Hot Chili Peppers</li>
+        </ol> 
+          <br>
+        <li>Minhas bandas atuais favoritas</li>
+        <ol type="a"> 
+            <li>Imagine Dragons</li>
+            <li>OneRepublic</li>
+            <li>Bastille</li>
+            <li>Little Mix</li>
+        </ol>
+    </ol> 
+
+    <h2>Misturando as coisas (ordenadas + não ordenadas)</h2>
+    <ol> <!-- Criei uma lista ordenada e dentro delas coloquei duas não ordenadas com o TIPO SQUARE-->
+        <li>Minhas bandas antigas favoritas</li>
+         <ul type="square">
+            <li>Charlie Brown Jr.</li>
+            <li>CPM 22</li>
+            <li>Linkin Park</li>
+            <li>Red Hot Chili Peppers</li>
+         </ul>
+         <br>
+         <li>Minhas bandas atuais favoritas</li>
+         <ul type="square">
+            <li>Imagine Dragons</li>
+            <li>OneRepublic</li>
+            <li>Bastille</li>
+
+            <li>Little Mix</li>
+         </ul>
+    </ol>
+
+</body>
+</html>

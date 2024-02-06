@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p{
+            display: none; /* O parágrafo não irá aparecer */ 
+        }
+
+        div:hover > p{
+            display: block;
+            color: white;
+            font-weight: bold;
+            background-color: red;
+            height: 50px;
+            width: 200px;
+            text-align: center;
+        }
+
+        div:hover{ /* QUANDO PASSAR O MOUSE SOBRE A DIV, A COR MUDARÁ PARA VERMELHO */
+            color: red;
+        }
+
+        div#listas:hover{
+            color: blue;
+        }
+
+        div#listas > ul{
+            display: none;
+        }
+
+        div#listas:hover > ul{
+            display: block;
+            color: blue;
+            font-weight: bold;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>ARRASOU, GAROTA! VOCÊ É FODA!</p>
+    </div> <br>
+ 
+    <div id="listas">
+        Menu
+        
+           <ul type="none">
+            <li>Músicas</li>
+            <li>Imagens</li>
+            <li>vídeos</li>
+            <li>documentos</li>
+           </ul>
+
+        
+    </div>
+    <p>Fim do exemplo</p>
+</html>
