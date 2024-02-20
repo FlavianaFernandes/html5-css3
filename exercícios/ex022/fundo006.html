@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testando Imagem de Fundo</title>
+    <title>Fundo fixo de tela</title>
     <style>
 
         *{
@@ -16,23 +16,37 @@
         body {
             height: 100vh; /* ocupar 100% da viewport */
 
-            background-color: gray; /* importante colocar uma cor de fundo, pois o conteúdo sempre carrega primeiro que as imagens */
+            /* background-color: gray; = importante colocar uma cor de fundo, pois o conteúdo sempre carrega primeiro que as imagens 
 
             background-image: url('imagens/wallpaper002.jpg');
 
             background-position: center center;
+            
             background-repeat: no-repeat;
             
-            background-size: cover; /* permite que preencha toda a tela, mas quando diminuir, algumas partes serão cortadas. a imagem de fundo não se moverá, mesmo mudando o tamanho da tela */
+            background-size: cover; = permite que preencha toda a tela, mas quando diminuir, algumas partes serão cortadas. a imagem de fundo não se moverá, mesmo mudando o tamanho da tela 
+
+            background-attachment: fixed; = faz com que a imagem de fundo fique fixa mesmo com a rolagem do conteúdo da página */
+
+            
+            
+            /* SHORTHAND DA PROPRIEDADE BACKGROUND:display: 
+            color > image > position > repeat > size > attachment */
+
+            background: gray url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
+            /* OBS: o background-size fica de fora da SHORTHAND */
+
         }
 
 
         main {
             background-color: white;
-            width: 500px;
+            max-width: 700px;
             padding: 20px;
             margin: auto;
-            font-size: 1.2em;
+            font-size: 1.5em;
             border: 1px solid darkblue;
             border-radius: 15px;
         }
@@ -55,6 +69,41 @@
     <main>
         <h1>Teste imagem de fundo</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis laboriosam eligendi, rerum culpa commodi
+            labore mollitia possimus est? Recusandae ratione velit fuga alias quam, possimus magni modi eius aperiam
+            obcaecati. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusamus, ducimus nostrum
+            fugiat aut aspernatur dolores adipisci ad? Commodi totam cumque eius, reiciendis est maiores tempora
+            deserunt repellendus vitae perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            doloremque consectetur accusantium dolorum, dolorem nobis molestiae soluta ab consequuntur minima at
+            obcaecati, dolor et nam modi? Enim distinctio eum laboriosam!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis laboriosam eligendi, rerum culpa commodi
+            labore mollitia possimus est? Recusandae ratione velit fuga alias quam, possimus magni modi eius aperiam
+            obcaecati. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusamus, ducimus nostrum
+            fugiat aut aspernatur dolores adipisci ad? Commodi totam cumque eius, reiciendis est maiores tempora
+            deserunt repellendus vitae perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            doloremque consectetur accusantium dolorum, dolorem nobis molestiae soluta ab consequuntur minima at
+            obcaecati, dolor et nam modi? Enim distinctio eum laboriosam!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis laboriosam eligendi, rerum culpa commodi
+            labore mollitia possimus est? Recusandae ratione velit fuga alias quam, possimus magni modi eius aperiam
+            obcaecati. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusamus, ducimus nostrum
+            fugiat aut aspernatur dolores adipisci ad? Commodi totam cumque eius, reiciendis est maiores tempora
+            deserunt repellendus vitae perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            doloremque consectetur accusantium dolorum, dolorem nobis molestiae soluta ab consequuntur minima at
+            obcaecati, dolor et nam modi? Enim distinctio eum laboriosam!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis laboriosam eligendi, rerum culpa commodi
+            labore mollitia possimus est? Recusandae ratione velit fuga alias quam, possimus magni modi eius aperiam
+            obcaecati. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusamus, ducimus nostrum
+            fugiat aut aspernatur dolores adipisci ad? Commodi totam cumque eius, reiciendis est maiores tempora
+            deserunt repellendus vitae perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            doloremque consectetur accusantium dolorum, dolorem nobis molestiae soluta ab consequuntur minima at
+            obcaecati, dolor et nam modi? Enim distinctio eum laboriosam!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis laboriosam eligendi, rerum culpa commodi
+            labore mollitia possimus est? Recusandae ratione velit fuga alias quam, possimus magni modi eius aperiam
+            obcaecati. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusamus, ducimus nostrum
+            fugiat aut aspernatur dolores adipisci ad? Commodi totam cumque eius, reiciendis est maiores tempora
+            deserunt repellendus vitae perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            doloremque consectetur accusantium dolorum, dolorem nobis molestiae soluta ab consequuntur minima at
+            obcaecati, dolor et nam modi? Enim distinctio eum laboriosam!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis laboriosam eligendi, rerum culpa commodi
             labore mollitia possimus est? Recusandae ratione velit fuga alias quam, possimus magni modi eius aperiam
             obcaecati. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusamus, ducimus nostrum
             fugiat aut aspernatur dolores adipisci ad? Commodi totam cumque eius, reiciendis est maiores tempora
