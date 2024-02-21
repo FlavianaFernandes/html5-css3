@@ -61,6 +61,20 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 
+section{
+    font-family: var(--fonte-corpo-do-texto);
+    color: white;
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 50px;
+    line-height: 2em;  
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
 section.normal{
     background-color: white;
     color: black;
@@ -69,27 +83,32 @@ section.normal{
 section.imagem{
     background-color: rgb(110, 110, 110);
     color: white;
+    background-size: cover;
+
+    background-attachment: fixed;
 }
 
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+
+    background-position: right center; /*pois a parte que mais aparece na imagem, está do lado direito (a flor)*/
+
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg'); /*importante lembrar que existe uma pasta para estilo e outra para imagens, portanto para inserir a imagem é necessário iniciar com ('../imgens/)*/
+
+    background-position: right center; /*pois a parte que mais aparece na imagem, está do lado direito (a flor)*/
+
+    }
 section.imagem > p{
     display: inline-block; /* serve para deixar a caixa sempre acompanhando o tamanho da letra*/
 
-    background-color: rgba(0, 0, 0, 0.212);
+    background-color: rgba(0, 0, 0, 0.137);
+
+    text-shadow: 1px 1px 0px black;
 
     padding: 5px;
-}
-
-section{
-    font-family: var(--fonte-corpo-do-texto);
-    color: white;
-    font-size: 3.5vw;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 50px;
-    line-height: 2em;
-
-       
-   
 }
 
 footer{
