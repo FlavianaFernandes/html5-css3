@@ -14,23 +14,20 @@
     --fonte-cabeçalho: "Passion One", sans-serif;
     --fonte-corpo-do-texto: "Sriracha", cursive;
     --fonte-padrão:  Verdana, Geneva, Tahoma, sans-serif;
-
-    --cor01: white;
-    --cor02: black;
 }
 
 html, body{ 
     min-height: 100vh;
     background-color: gray;
     font-family: var(--fonte-padrão);
-    } ok
+    }
     
 
 header{
     background-color: black;
     text-align: center;
     font-family: var(--fonte-cabeçalho);
-    } ok
+    }
 
 header > h1{
     padding-top: 50px; 
@@ -39,7 +36,7 @@ header > h1{
     font-family: var(--fonte-cabeçalho);
     font-style: bold;
 
-    font-size: 10vw; /*serve para que a letra aumente ou diminua 10% da largura da tela (viewport width/vw) quando o conteúdo abrir nas diferentes ferramentas como celular e computador, por exemplo (não é a melhor opção, mas é dentro do conteúdo estudado até então que é HTML5 e CSS3)*/
+    font-size: 10vw; /*serve para que a letra aumente ou diminua 10% da largura da tela (viewport width/vw) quando o conteúdo abrir nas diferentes ferramentas como celular e computador, por exemplo (não é a melhor opção, mas é dentro do conteúdo estudado até agora que é HTML5 e CSS3)*/
 
     color: white;
 }
@@ -49,7 +46,7 @@ header > p{
 
     font-family: var(--fonte-padrão);
     color: white;
-    font-size: 1.5em;
+    font-size: 1.8em; 
 }
 
 header a, footer a { /* forma resumida de estilizar os links do header e footer, mas poderia também estilizar cada um separadamente */
@@ -66,25 +63,35 @@ header a:hover, footer a:hover{
 section{
     font-family: var(--fonte-corpo-do-texto);
     color: white;
-    font-size: 3.5vw;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 50px;
-    line-height: 2em;  
+    
+    font-size: 3.5vw; /*serve para que a letra aumente ou diminua 3.5% da largura da tela (viewport width/vw) quando o conteúdo abrir nas diferentes ferramentas como celular e computador, por exemplo (não é a melhor opção, mas é dentro do conteúdo estudado até agora que é HTML5 e CSS3)*/
+
+    
+    padding-top: 10vh; /* para que tenha 10% da altura total da tela em cima e dê um bom espaçamento de uma section para outra. o mais importante é que aumentando ou diminuindo a altura do viewport, isso já se adapta */
+
+    padding-bottom: 10vh; /* para que tenha 10% da altura total da tela em baixo e dê um bom espaçamento de uma section para outra. o mais importante é que aumentando ou diminuindo a altura do viewport, isso já se adapta */
+
+    padding-left: 40px; /* para que as letras fiquem um pouco afastadas do lado esquerda da viewport */
+
+    line-height: 2em; /* espaçamento duplo entre as frases para facilitar a leitura  */
 }
 
 section > p{
-    padding-bottom: 2em;
+    padding-bottom: 2em; /* para separar as estrofes que ficaram juntas na mesma section */
 }
 
 section.normal{
     background-color: white;
     color: black;
-   }ok
+   }
 
 section.imagem{
-    background-color: rgb(110, 110, 110);
+    background-color: rgb(110, 110, 110); /* o fundo antes de colocar a imagem é de extrema importância */
+
     color: white;
+
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.445); /* cria uma sompra dentro da imagem (inset), para dar um efeito visual mais agradável */
+
     background-size: cover;
 
     background-attachment: fixed;
@@ -100,15 +107,16 @@ section#img01{
 section#img02{
     background-image: url('../imagens/background002.jpg'); /*importante lembrar que existe uma pasta para estilo e outra para imagens, portanto para inserir a imagem é necessário iniciar com ('../imgens/)*/
 
-    background-position: right center; /*pois a parte que mais aparece na imagem, está do lado direito (a flor)*/
+    background-position: right center; /*pois a parte que mais aparece na imagem, está do lado direito (as letras da carta)*/
 
     }
+
 section.imagem > p{
     display: inline-block; /* serve para deixar a caixa sempre acompanhando o tamanho da letra*/
 
     background-color: rgba(0, 0, 0, 0.137);
 
-    text-shadow: 1px 1px 0px black;
+    text-shadow: 1px 1px 0px black; /* a sombra vai facilitar a leitura do texto já que está por cima de uma imagem colorida */
 
     padding: 5px;
 }
@@ -120,5 +128,5 @@ footer{
     font-family: var(--fonte-padrão);
     font-size: 1.8em;
     padding: 10px;
-}ok
+}
 
