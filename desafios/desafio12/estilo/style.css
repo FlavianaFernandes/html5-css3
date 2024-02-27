@@ -7,7 +7,7 @@
 *{
     margin: 0px;
     padding: 0px;
-}
+} ok
 
 
 :root{
@@ -19,21 +19,21 @@
     --cor02: black;
 }
 
-html, body{
+html, body{ 
     min-height: 100vh;
     background-color: gray;
     font-family: var(--fonte-padrão);
-    }
+    } ok
     
 
 header{
     background-color: black;
     text-align: center;
     font-family: var(--fonte-cabeçalho);
-    }
+    } ok
 
 header > h1{
-    padding-top: 50px;
+    padding-top: 50px; 
     font-variant: small-caps; /* propriedade nova, serve para quando colocar todas as letras maiúsculas, mas somente a primeira letra de cada palavra que ganha destaque e fica maior*/
 
     font-family: var(--fonte-cabeçalho);
@@ -45,13 +45,15 @@ header > h1{
 }
 
 header > p{
-    padding-bottom: 50px;
+    padding-bottom: 50px; /* para deixar cabeçalho simétrico, pois também coloquei o padding-top de 50px */
+
     font-family: var(--fonte-padrão);
     color: white;
     font-size: 1.5em;
 }
 
-header a, footer a {
+header a, footer a { /* forma resumida de estilizar os links do header e footer, mas poderia também estilizar cada um separadamente */
+
     text-decoration: none;
     color: white;
     font-weight: bolder;
@@ -78,7 +80,7 @@ section > p{
 section.normal{
     background-color: white;
     color: black;
-   }
+   }ok
 
 section.imagem{
     background-color: rgb(110, 110, 110);
@@ -118,5 +120,5 @@ footer{
     font-family: var(--fonte-padrão);
     font-size: 1.8em;
     padding: 10px;
-}
+}ok
 
