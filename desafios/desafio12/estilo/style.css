@@ -77,15 +77,21 @@ section{
 }
 
 section > p{
+    font-family: var(--fonte-corpo-do-texto);
+
     padding-bottom: 2em; /* para separar as estrofes que ficaram juntas na mesma section */
 }
 
 section.normal{
+    font-family: var(--fonte-corpo-do-texto);
+
     background-color: white;
     color: black;
    }
 
 section.imagem{
+    font-family: var(--fonte-corpo-do-texto);
+
     background-color: rgb(110, 110, 110); /* o fundo antes de colocar a imagem é de extrema importância */
 
     color: white;
