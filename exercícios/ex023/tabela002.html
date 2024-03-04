@@ -11,6 +11,11 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
+    tbody > :nth-child(even){ /* números pares. para números ímpar, posso usar o valor 'odd' */
+
+        background-color: lightskyblue;
+    }
+
     caption{
         font-size: 1.2em;
         background-color: lightgray;
@@ -23,9 +28,16 @@
         
         border-collapse: collapse; /* para que fique apenas uma linha e não linhas duplicadas */
 
+        position: relative;
     }
 
-    thead, tfoot{
+    thead > tr > th{
+        position: sticky;
+        top: 0px;
+        background-color: gray;
+    }
+
+        thead, tfoot{
         background-color: gray;
         color: white;
     }
@@ -193,15 +205,25 @@
                 <td class="num">636 707</td>
             </tr>
 
+            
+
         </tbody> 
 
-
-        <tfoot> <!-- rodapé -->
+       <tfoot> <!-- rodapé -->
             <th scope="row">Total de habitantes</th> <!-- o 'scope: row' pois o título é para uma linha -->
 
             <td class="num"><strong>203 078 389</strong></td> <!-- o strong para indicar que é um número importante (assim fica semanticamente correto) -->
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perferendis officiis eligendi, libero, quam dolor voluptatem repudiandae deleniti nihil voluptatum repellendus tempora eum sunt. Sed, enim! Iusto facere doloremque cupiditate in architecto distinctio beatae doloribus neque veritatis suscipit non eligendi ut praesentium, eum eius repellat dolorem? Dicta laborum debitis, perferendis veniam ratione repellendus consectetur fuga temporibus corporis nisi porro alias minus ipsa nulla qui incidunt nostrum fugiat cupiditate laudantium impedit quia praesentium voluptatem quis sed? Voluptates sit nihil rem. Voluptatum rem, tempore, repudiandae quae, corporis eligendi blanditiis doloremque voluptas nostrum pariatur explicabo deleniti quod minus quibusdam quos illo? Dolor distinctio inventore ut! Asperiores veniam ipsum debitis officiis reprehenderit quibusdam at nemo unde ipsa. Commodi dolore nemo eius eaque aliquam pariatur, architecto saepe ab harum molestias sapiente soluta illum voluptas ipsam. Nemo, possimus dolorum reprehenderit id officiis minus neque repudiandae suscipit modi harum quod sint, iste eum labore doloribus. Eum illum excepturi, repudiandae voluptatem, expedita, deleniti delectus alias dolore cupiditate vero corrupti quis odit. Facilis magni, earum cupiditate molestiae cum illo quae reprehenderit, unde dignissimos, mollitia accusamus sunt quibusdam officiis ex soluta odit rerum neque deleniti harum voluptas iste. Nam qui aperiam consequuntur! Necessitatibus quam maiores, ad dicta nesciunt inventore eius.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perferendis officiis eligendi, libero, quam dolor voluptatem repudiandae deleniti nihil voluptatum repellendus tempora eum sunt. Sed, enim! Iusto facere doloremque cupiditate in architecto distinctio beatae doloribus neque veritatis suscipit non eligendi ut praesentium, eum eius repellat dolorem? Dicta laborum debitis, perferendis veniam ratione repellendus consectetur fuga temporibus corporis nisi porro alias minus ipsa nulla qui incidunt nostrum fugiat cupiditate laudantium impedit quia praesentium voluptatem quis sed? Voluptates sit nihil rem. Voluptatum rem, tempore, repudiandae quae, corporis eligendi blanditiis doloremque voluptas nostrum pariatur explicabo deleniti quod minus quibusdam quos illo? Dolor distinctio inventore ut! Asperiores veniam ipsum debitis officiis reprehenderit quibusdam at nemo unde ipsa. Commodi dolore nemo eius eaque aliquam pariatur, architecto saepe ab harum molestias sapiente soluta illum voluptas ipsam. Nemo, possimus dolorum reprehenderit id officiis minus neque repudiandae suscipit modi harum quod sint, iste eum labore doloribus. Eum illum excepturi, repudiandae voluptatem, expedita, deleniti delectus alias dolore cupiditate vero corrupti quis odit. Facilis magni, earum cupiditate molestiae cum illo quae reprehenderit, unde dignissimos, mollitia accusamus sunt quibusdam officiis ex soluta odit rerum neque deleniti harum voluptas iste. Nam qui aperiam consequuntur! Necessitatibus quam maiores, ad dicta nesciunt inventore eius.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perferendis officiis eligendi, libero, quam dolor voluptatem repudiandae deleniti nihil voluptatum repellendus tempora eum sunt. Sed, enim! Iusto facere doloremque cupiditate in architecto distinctio beatae doloribus neque veritatis suscipit non eligendi ut praesentium, eum eius repellat dolorem? Dicta laborum debitis, perferendis veniam ratione repellendus consectetur fuga temporibus corporis nisi porro alias minus ipsa nulla qui incidunt nostrum fugiat cupiditate laudantium impedit quia praesentium voluptatem quis sed? Voluptates sit nihil rem. Voluptatum rem, tempore, repudiandae quae, corporis eligendi blanditiis doloremque voluptas nostrum pariatur explicabo deleniti quod minus quibusdam quos illo? Dolor distinctio inventore ut! Asperiores veniam ipsum debitis officiis reprehenderit quibusdam at nemo unde ipsa. Commodi dolore nemo eius eaque aliquam pariatur, architecto saepe ab harum molestias sapiente soluta illum voluptas ipsam. Nemo, possimus dolorum reprehenderit id officiis minus neque repudiandae suscipit modi harum quod sint, iste eum labore doloribus. Eum illum excepturi, repudiandae voluptatem, expedita, deleniti delectus alias dolore cupiditate vero corrupti quis odit. Facilis magni, earum cupiditate molestiae cum illo quae reprehenderit, unde dignissimos, mollitia accusamus sunt quibusdam officiis ex soluta odit rerum neque deleniti harum voluptas iste. Nam qui aperiam consequuntur! Necessitatibus quam maiores, ad dicta nesciunt inventore eius.</p>
+
+
+
 
 </body>
 </html>
