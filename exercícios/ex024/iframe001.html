@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EStudos de Iframe</title>
+    <style>
+
+        iframe{ /* a estilização nas CSS se sobrepõem a estilização feita no HTML dentro da tag <iframe> */
+           
+            width: 400px;
+            height: 400px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>Acessando o site do Curso em Vídeo
+    
+    <!-- tamanho padrão do iframe 300x150 (300px de largura e 150px de altura) -->
+    <iframe src="https://www.cursoemvideo.com/" frameborder="0" scrolling="no">
+        <a href="https://www.cursoemvideo.com">Curso em vídeo</a>
+    </iframe>
+    
+    para aprender a programar.</p>
+
+    <p>Também consigo inserir um vídeo do canal do youtube Curso em Vídeo 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iy9vp0rdD90?si=RIh1UfcgMnDIXJCt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </p>
+
+    <p>O repositório do Guanabara
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" scrolling="no">no <a href="https://gustavoguanabara.github.io" target="_blank">GitHub</a></iframe>
+
+        <!-- o parâmetro scrolling="no" serve para retirar a barra de rolagem (mesmo que o conteúdo seja extendo e precise).
+        o padrão é 'auto' e tem também o 'yes' (que força uma barra de rolagem mesmo que não tenha) -->
+
+    também é legal!
+    </p>
+</body>
+</html>
