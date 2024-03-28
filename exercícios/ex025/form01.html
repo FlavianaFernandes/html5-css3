@@ -13,7 +13,7 @@
 <body>
     <h1>Meu primeiro Formulário</h1>
     
-   <form action="cadastro.php" autocomplete="off"> <!-- 'action' vai dizer para onde os dados serão enviados -->
+   <form action="cadastro.php" method="post" autocomplete="off"> <!-- 'action' vai dizer para onde os dados serão enviados -->
 
     <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p> <!-- o 'label' cria um vínculo entre o 'nome' e o <input> (a caixa de texto que aparecerá para ser preenchida). essa ligação é feita com o atributo 'for' que deve ter o mesmo nome do 'id' que se encontra no <input> -->
 
@@ -21,7 +21,7 @@
 
     <p><input type="submit" value="Enviar"></p>
 
-   </form>
-  
+   </form> 
+
 </body>
 </html>
