@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+        }
+
+        fieldset{
+            width: 500px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        .botão{
+            margin-left: 10px;
+            padding: 5px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isexmas" value="Masculino"> <label for="isexmas">Masculino</label> <br>
+            
+            <input type="radio" name="sexo" id="isexfem" value="Feminino"> <label for="isexfem">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esporfut" id="iesporfut" value="futebol"> <label for="iesporfut" >Futebol</label> <br>
+
+            <input type="checkbox" name="esporbas" id="iesporbas" value="basquete"> <label for="iesporbas">Basquete</label> <br>
+
+            <input type="checkbox" name="espornat" id="iespornat" value="natação"> <label for="iespornat">Natação</label> <br>
+
+            <input type="checkbox" name="esporten" id="iesporten" value="tenis"> <label for="iesporten">Tênis</label> <br>
+
+            <input type="checkbox" name="esporcor" id="iesporcor" value="corrida"> <label for="iesporcor">Corrida</label>
+       </fieldset>
+
+       <p>
+        <input type="submit" value="Enviar" class="botão">
+        <input type="reset" value="Limpar" class="botão">
+       </p>
+    </form>
+</body>
+</html>

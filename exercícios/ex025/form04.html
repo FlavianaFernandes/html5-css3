@@ -16,28 +16,40 @@
             </p>
             <p>
                 <label for="iemail">Email:</label>
-                <input type="email" name="email" id="iemail" required autocomplete="email">
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="digite seu email principal..." size="25">
             </p>
             <p>
                 <label for="itel">Telefone:</label>
-                <input type="tel" name="tel" id="itel" required placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" autocomplete="tel"> 
+                <input type="tel" name="tel" id="itel" required placeholder="(ddd)9xxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" autocomplete="tel"> 
                <!--  
                explicação do regEx - expressão regular
-               ^ - Início da string
-               \( - abre parênteses
-               \d - dígito
-               {2} - indica que são 2 dígitos
-               \) - fecha parênteses
-               {4,5} - de 4 a 5 dígitos
-               {4} - 4 dígitos
-               $ - final da string  
+                
+                ^ - Início da string
+                \( - abre parênteses (sendo assim o usuário também precisa digitar o parêntese)
+                \d - dígito (ao invés de colocar de 0-9, escrevo só que tem dígitos)
+                {2} - indica que são 2 dígitos
+                \) - fecha parênteses
+                \d - dígito (ao invés de colocar de 0-9, escrevo só que tem dígitos)
+                {4,5} - de 4 a 5 dígitos
+                " - " traço (dessa forma o usuário também precisa digitar o traço)
+                \d - dígito (ao invés de colocar de 0-9, escrevo só que tem dígitos)
+                {4} - 4 dígitos
+                $ - final da string   
                -->
             </p>
+
+            <p>
+                <input type="checkbox" name="aceito" id="iaceito" required> <!-- cria uma caixa de marcação, é importante colocar antes do label para que a caixa fique antes do nome 'aceito termos de uso' -->
+                
+                <label for="iaceito">Aceito <a href="#">termos de uso</a></label>
+            </p>
+        </fieldset>
+
             <p>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
             </p>
-        </fieldset>
+        
     </form>
 </body>
 </html>
