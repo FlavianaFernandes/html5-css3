@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* estilo para impressoras */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace; /* é uma fonte adequada para impressão pois facilita a leitura */
+
+    font-size: 1em;
+
+    line-height: 1em;
+}
+
+menu{
+    display: none; /* tirei o menu só para a versão impressa, mas ele continua no site */
+}
+
+article{
+    width: 100%; /* no papel impresso, o texto ocupará 100% do espaço */
+
+}
+
+article > h2{
+    text-align: center;
+}
+article > p{
+    text-indent: 40px;
+    text-align: justify;
+    padding: 8px;
+    line-height: 20px;
+}
+
+article::after{ /* usar a pseudo-classe 'after' para exibir essa frase no fim do documento, depois do artigo */
+
+    font-size: 0.7em;
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+}
