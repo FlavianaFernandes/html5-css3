@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints (sempre atualiza)
+----------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px */
+
+
+/* obs: não foi feito uma @media para celulares pois o site é feito para dispositivos móveis, utilizando mobile-first (style.css)*/
+
+@media print{ /* impressora */
+
+    *{
+        font-family: 'Courier New', Courier, monospace; /* escolher a melhor fonte para impressão */
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg); /* na versão impressa o bacground-image não funciona */
+    }
+
+    main{
+        width: 600px;
+        border: 2px solid black;
+        text-align: center;
+
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-align: justify;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#impressora{ display: block;}  /* ativa somente a versão que está usando */
+    img#desktop{ display: none;}
+    img#tv{ display: none;}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){  /* tablet */
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#tablet{ display: block;}
+    img#phone{ display: none;}
+    img#impressora{ display: none;}
+    img#desktop{ display: none;}
+    img#tv{ display: none;}
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /* desktop */
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#impressora{ display: none;}
+    img#desktop{ display: block;}
+    img#tv{ display: none;}
+}
+
+
+@media screen and (min-width: 1200px){ /* grandes telas */
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#impressora{ display: none;}
+    img#desktop{ display: none;}
+    img#tv{ display: block;}
+}
