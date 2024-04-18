@@ -17,12 +17,6 @@
     menu > ul > li {
         display: inline-block;
         border: 1px solid #ad27ced3;
-        margin-right: 5px;
-        border-radius: 10px;       
+        margin-right: 5px;       
     } 
-
-    menu > ul > li > a:hover {
-        border-radius: 10px;
-    }
-
 }
