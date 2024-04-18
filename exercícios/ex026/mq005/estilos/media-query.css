@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 688px) { /* telas de tablet pra cima */
+
+    span#burguer {
+        display: none;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        border: 1px solid #ad27ced3;
+        margin-right: 5px;
+        border-radius: 10px;       
+    } 
+
+    menu > ul > li > a:hover {
+        border-radius: 10px;
+    }
+
+}

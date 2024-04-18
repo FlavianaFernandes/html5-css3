@@ -20,14 +20,14 @@ header{
 }
 
 header > h1{
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     color: black;
 }
 
 span#burguer{
     display: block;
-    background-color: rgb(170, 165, 165);
+    background-color: #9333d8da;
     color: white;
     text-align: center;
     padding: 10px;
@@ -35,7 +35,7 @@ span#burguer{
 }
 
 span#burguer:hover{
-    background-color: rgb(167, 166, 166);
+    background-color: #9333d8da;
     color: black;
 }
 
@@ -52,14 +52,14 @@ menu > ul > li > a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: lightgray;
-    color: rgba(0, 0, 0, 0.705);
+    background-color: white;
+    color: rgba(0, 0, 0, 0.788);
     font-weight: bold;
     border-top: 1px solid gray;
 }
 
 menu > ul > li > a:hover {
-    background-color: gray;
+    background-color: #ad27ce6e;
     color: white;
 }
 
