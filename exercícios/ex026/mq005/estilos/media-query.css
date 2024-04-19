@@ -6,12 +6,12 @@
         display: none;
     }
 
-    body {
-        height: 100vh;
-    }
-
     menu {
         display: block;
+    }
+
+    body {
+        height: 100vh;
     }
 
     menu > ul > li {
