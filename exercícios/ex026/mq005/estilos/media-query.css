@@ -20,3 +20,11 @@
         margin-right: 5px;       
     } 
 }
+
+@media screen and (max-width: 688px) and (orientation: landscape) { /* importante criar a orientação para landscape do celular */
+    
+    body {
+        height: 100vh;
+    }
+
+}
