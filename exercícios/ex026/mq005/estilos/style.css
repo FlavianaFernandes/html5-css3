@@ -84,3 +84,12 @@ article > p {
     margin-bottom: 20px;
     line-height: 20px;
 }
+
+
+@media screen and (max-width: 992px) and (orientation: landscape) { /* importante criar a orientação para landscape do celular */
+    
+    main {
+        height: 100vh;
+    }
+
+}
