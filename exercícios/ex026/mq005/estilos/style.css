@@ -92,4 +92,8 @@ article > p {
         height: 100vh;
     }
 
+    html {
+        background-image: linear-gradient(to bottom, #f433d6, #be31e2, #9d30ea, #452dfd);
+    }
+
 }
